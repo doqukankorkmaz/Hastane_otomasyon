@@ -97,8 +97,21 @@ namespace Hastane_proje
 
         private void BtnDoktorPaneli_Click(object sender, EventArgs e)
         {
-            FrmDoktorPaneli drp= new FrmDoktorPaneli();
+            FrmDoktorPaneli drp = new FrmDoktorPaneli();
             drp.Show();
+        }
+
+        private void BtnBransPaneli_Click(object sender, EventArgs e)
+        {
+            FrmBrans frb = new FrmBrans();
+            frb.Show();
+        }
+
+        private void BtnRandevuListe_Click(object sender, EventArgs e)
+        {
+
+            FrmRandevuListesi fr1 = new FrmRandevuListesi();
+            fr1.Show();
         }
     }
 }

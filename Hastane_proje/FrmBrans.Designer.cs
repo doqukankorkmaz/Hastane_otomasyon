@@ -32,7 +32,7 @@
             BtnSil = new Button();
             BtnEkle = new Button();
             dataGridView1 = new DataGridView();
-            TxtBransAd = new TextBox();
+            TxtBrans = new TextBox();
             Txtid = new TextBox();
             label2 = new Label();
             label1 = new Label();
@@ -48,6 +48,7 @@
             BtnGuncelle.TabIndex = 21;
             BtnGuncelle.Text = "Güncelle";
             BtnGuncelle.UseVisualStyleBackColor = false;
+            BtnGuncelle.Click += BtnGuncelle_Click;
             // 
             // BtnSil
             // 
@@ -58,6 +59,7 @@
             BtnSil.TabIndex = 22;
             BtnSil.Text = "Sil";
             BtnSil.UseVisualStyleBackColor = false;
+            BtnSil.Click += BtnSil_Click;
             // 
             // BtnEkle
             // 
@@ -68,29 +70,34 @@
             BtnEkle.TabIndex = 23;
             BtnEkle.Text = "Ekle";
             BtnEkle.UseVisualStyleBackColor = false;
+            BtnEkle.Click += BtnEkle_Click;
             // 
             // dataGridView1
             // 
+            dataGridView1.AccessibleRole = AccessibleRole.Cursor;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(343, 68);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(393, 187);
             dataGridView1.TabIndex = 20;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
-            // TxtBransAd
+            // TxtBrans
             // 
-            TxtBransAd.Location = new Point(169, 106);
-            TxtBransAd.Margin = new Padding(3, 4, 3, 4);
-            TxtBransAd.Name = "TxtBransAd";
-            TxtBransAd.Size = new Size(156, 33);
-            TxtBransAd.TabIndex = 16;
+            TxtBrans.Location = new Point(169, 116);
+            TxtBrans.Margin = new Padding(3, 4, 3, 4);
+            TxtBrans.Name = "TxtBrans";
+            TxtBrans.Size = new Size(156, 40);
+            TxtBrans.TabIndex = 16;
             // 
             // Txtid
             // 
             Txtid.Location = new Point(169, 68);
             Txtid.Margin = new Padding(3, 4, 3, 4);
             Txtid.Name = "Txtid";
-            Txtid.Size = new Size(156, 33);
+            Txtid.Size = new Size(156, 40);
             Txtid.TabIndex = 17;
             // 
             // label2
@@ -98,7 +105,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(51, 109);
             label2.Name = "label2";
-            label2.Size = new Size(99, 26);
+            label2.Size = new Size(127, 33);
             label2.TabIndex = 13;
             label2.Text = "Branş Ad:";
             // 
@@ -107,13 +114,13 @@
             label1.AutoSize = true;
             label1.Location = new Point(58, 71);
             label1.Name = "label1";
-            label1.Size = new Size(92, 26);
+            label1.Size = new Size(117, 33);
             label1.TabIndex = 14;
             label1.Text = "Brans İd:";
             // 
             // FrmBrans
             // 
-            AutoScaleDimensions = new SizeF(12F, 26F);
+            AutoScaleDimensions = new SizeF(15F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
             ClientSize = new Size(800, 338);
@@ -121,14 +128,15 @@
             Controls.Add(BtnSil);
             Controls.Add(BtnEkle);
             Controls.Add(dataGridView1);
-            Controls.Add(TxtBransAd);
+            Controls.Add(TxtBrans);
             Controls.Add(Txtid);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Corbel", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "FrmBrans";
             Text = "FrmBrans";
+            Load += FrmBrans_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -140,7 +148,7 @@
         private Button BtnSil;
         private Button BtnEkle;
         private DataGridView dataGridView1;
-        private TextBox TxtBransAd;
+        private TextBox TxtBrans;
         private TextBox Txtid;
         private Label label2;
         private Label label1;

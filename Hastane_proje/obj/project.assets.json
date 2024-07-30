@@ -2269,11 +2269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\doguk\\source\\repos\\Hastane_proje\\Hastane_proje\\Hastane_proje.csproj",
+      "projectUniqueName": "C:\\Users\\doguk\\source\\repos\\Hastane_otomasyon\\Hastane_proje\\Hastane_proje.csproj",
       "projectName": "Hastane_proje",
-      "projectPath": "C:\\Users\\doguk\\source\\repos\\Hastane_proje\\Hastane_proje\\Hastane_proje.csproj",
+      "projectPath": "C:\\Users\\doguk\\source\\repos\\Hastane_otomasyon\\Hastane_proje\\Hastane_proje.csproj",
       "packagesPath": "C:\\Users\\doguk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\doguk\\source\\repos\\Hastane_proje\\Hastane_proje\\obj\\",
+      "outputPath": "C:\\Users\\doguk\\source\\repos\\Hastane_otomasyon\\Hastane_proje\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\doguk\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3xbytsTLhuNamSq4pPx/HwVa457CfYv+sFRRSwhtgDyTZlsSxcAPhaSsR9tUfMiJiOvegHSIlZloXobAWLRfg==",
+  "dgSpecHash": "DRLA+R0Wepho9eSspgY2npGN7h1mh/HkTD0HwzzzlYYiXBjtliPrFSInyNwOWCLRGAekdYyYAkahhUxP4OKAGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\doguk\\source\\repos\\Hastane_proje\\Hastane_proje\\Hastane_proje.csproj",
+  "projectFilePath": "C:\\Users\\doguk\\source\\repos\\Hastane_otomasyon\\Hastane_proje\\Hastane_proje.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\doguk\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

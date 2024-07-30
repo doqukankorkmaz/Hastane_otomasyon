@@ -393,6 +393,7 @@
             BtnRandevuListe.TabIndex = 0;
             BtnRandevuListe.Text = "Randevu Liste";
             BtnRandevuListe.UseVisualStyleBackColor = true;
+            BtnRandevuListe.Click += BtnRandevuListe_Click;
             // 
             // BtnBransPaneli
             // 
@@ -402,6 +403,7 @@
             BtnBransPaneli.TabIndex = 0;
             BtnBransPaneli.Text = "Branş Paneli";
             BtnBransPaneli.UseVisualStyleBackColor = true;
+            BtnBransPaneli.Click += BtnBransPaneli_Click;
             // 
             // BtnDoktorPaneli
             // 
