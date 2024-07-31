@@ -44,6 +44,7 @@
             dataGridView1.Size = new Size(1092, 476);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
             // FrmRandevuListesi
             // 

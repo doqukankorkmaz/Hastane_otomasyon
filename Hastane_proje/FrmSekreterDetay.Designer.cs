@@ -37,7 +37,6 @@
             BtnDuyuruOlustur = new Button();
             RchDuyuru = new RichTextBox();
             groupBox3 = new GroupBox();
-            BtnDuzenle = new Button();
             BtnKaydet = new Button();
             ChkDurum = new CheckBox();
             CmbDoktor = new ComboBox();
@@ -60,6 +59,7 @@
             BtnRandevuListe = new Button();
             BtnBransPaneli = new Button();
             BtnDoktorPaneli = new Button();
+            BtnDuyurular = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -156,7 +156,6 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(BtnDuzenle);
             groupBox3.Controls.Add(BtnKaydet);
             groupBox3.Controls.Add(ChkDurum);
             groupBox3.Controls.Add(CmbDoktor);
@@ -179,16 +178,6 @@
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "Randevu Paneli";
-            // 
-            // BtnDuzenle
-            // 
-            BtnDuzenle.Location = new Point(130, 404);
-            BtnDuzenle.Margin = new Padding(3, 4, 3, 4);
-            BtnDuzenle.Name = "BtnDuzenle";
-            BtnDuzenle.Size = new Size(156, 39);
-            BtnDuzenle.TabIndex = 1;
-            BtnDuzenle.Text = "Düzenle";
-            BtnDuzenle.UseVisualStyleBackColor = true;
             // 
             // BtnKaydet
             // 
@@ -330,7 +319,7 @@
             groupBox4.Margin = new Padding(3, 4, 3, 4);
             groupBox4.Name = "groupBox4";
             groupBox4.Padding = new Padding(3, 4, 3, 4);
-            groupBox4.Size = new Size(393, 286);
+            groupBox4.Size = new Size(463, 286);
             groupBox4.TabIndex = 3;
             groupBox4.TabStop = false;
             groupBox4.Text = "Branşlar";
@@ -344,7 +333,7 @@
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(387, 245);
+            dataGridView1.Size = new Size(457, 245);
             dataGridView1.TabIndex = 0;
             // 
             // groupBox5
@@ -354,7 +343,7 @@
             groupBox5.Margin = new Padding(3, 4, 3, 4);
             groupBox5.Name = "groupBox5";
             groupBox5.Padding = new Padding(3, 4, 3, 4);
-            groupBox5.Size = new Size(393, 297);
+            groupBox5.Size = new Size(466, 297);
             groupBox5.TabIndex = 3;
             groupBox5.TabStop = false;
             groupBox5.Text = "Doktorlar";
@@ -368,11 +357,12 @@
             dataGridView2.Margin = new Padding(3, 4, 3, 4);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.Size = new Size(387, 256);
+            dataGridView2.Size = new Size(460, 256);
             dataGridView2.TabIndex = 0;
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(BtnDuyurular);
             groupBox6.Controls.Add(BtnRandevuListe);
             groupBox6.Controls.Add(BtnBransPaneli);
             groupBox6.Controls.Add(BtnDoktorPaneli);
@@ -387,9 +377,10 @@
             // 
             // BtnRandevuListe
             // 
-            BtnRandevuListe.Location = new Point(442, 54);
+            BtnRandevuListe.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            BtnRandevuListe.Location = new Point(316, 54);
             BtnRandevuListe.Name = "BtnRandevuListe";
-            BtnRandevuListe.Size = new Size(210, 50);
+            BtnRandevuListe.Size = new Size(146, 50);
             BtnRandevuListe.TabIndex = 0;
             BtnRandevuListe.Text = "Randevu Liste";
             BtnRandevuListe.UseVisualStyleBackColor = true;
@@ -397,9 +388,10 @@
             // 
             // BtnBransPaneli
             // 
-            BtnBransPaneli.Location = new Point(224, 54);
+            BtnBransPaneli.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            BtnBransPaneli.Location = new Point(162, 54);
             BtnBransPaneli.Name = "BtnBransPaneli";
-            BtnBransPaneli.Size = new Size(212, 50);
+            BtnBransPaneli.Size = new Size(148, 50);
             BtnBransPaneli.TabIndex = 0;
             BtnBransPaneli.Text = "Branş Paneli";
             BtnBransPaneli.UseVisualStyleBackColor = true;
@@ -407,20 +399,33 @@
             // 
             // BtnDoktorPaneli
             // 
+            BtnDoktorPaneli.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             BtnDoktorPaneli.Location = new Point(6, 54);
             BtnDoktorPaneli.Name = "BtnDoktorPaneli";
-            BtnDoktorPaneli.Size = new Size(212, 50);
+            BtnDoktorPaneli.Size = new Size(150, 50);
             BtnDoktorPaneli.TabIndex = 0;
             BtnDoktorPaneli.Text = "Doktor Paneli";
             BtnDoktorPaneli.UseVisualStyleBackColor = true;
             BtnDoktorPaneli.Click += BtnDoktorPaneli_Click;
             // 
+            // BtnDuyurular
+            // 
+            BtnDuyurular.Font = new Font("Corbel", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            BtnDuyurular.Location = new Point(472, 54);
+            BtnDuyurular.Name = "BtnDuyurular";
+            BtnDuyurular.Size = new Size(136, 50);
+            BtnDuyurular.TabIndex = 1;
+            BtnDuyurular.Text = "Duyurular";
+            BtnDuyurular.UseVisualStyleBackColor = true;
+            BtnDuyurular.Click += BtnDuyurular_Click;
+            // 
             // FrmSekreterDetay
             // 
             AutoScaleDimensions = new SizeF(15F, 33F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.CadetBlue;
-            ClientSize = new Size(1153, 618);
+            ClientSize = new Size(1212, 618);
             Controls.Add(groupBox6);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
@@ -429,6 +434,7 @@
             Controls.Add(groupBox1);
             Font = new Font("Corbel", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
             Margin = new Padding(6, 5, 6, 5);
+            MaximizeBox = false;
             Name = "FrmSekreterDetay";
             Text = "FrmSekreterDetay";
             Load += FrmSekreterDetay_Load;
@@ -462,7 +468,6 @@
         private Label label7;
         private Label label6;
         private Label label5;
-        private Button BtnDuzenle;
         private Button BtnKaydet;
         private CheckBox ChkDurum;
         private ComboBox CmbDoktor;
@@ -479,5 +484,6 @@
         private Button BtnRandevuListe;
         private Button BtnBransPaneli;
         private Button BtnDoktorPaneli;
+        private Button BtnDuyurular;
     }
 }

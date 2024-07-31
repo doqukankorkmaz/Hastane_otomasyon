@@ -128,6 +128,7 @@
             // 
             // Txtid
             // 
+            Txtid.Enabled = false;
             Txtid.Location = new Point(144, 43);
             Txtid.Name = "Txtid";
             Txtid.Size = new Size(182, 36);
@@ -153,6 +154,7 @@
             BtnRandevuAl.TabIndex = 5;
             BtnRandevuAl.Text = "Randevu Al";
             BtnRandevuAl.UseVisualStyleBackColor = true;
+            BtnRandevuAl.Click += BtnRandevuAl_Click;
             // 
             // label7
             // 
@@ -258,6 +260,7 @@
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.Size = new Size(647, 186);
             dataGridView2.TabIndex = 0;
+            dataGridView2.CellClick += dataGridView2_CellClick;
             // 
             // FrmHastaDetay
             // 

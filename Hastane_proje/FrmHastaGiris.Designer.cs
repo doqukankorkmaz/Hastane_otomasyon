@@ -67,6 +67,7 @@
             TxtSifre.Name = "TxtSifre";
             TxtSifre.Size = new Size(321, 40);
             TxtSifre.TabIndex = 10;
+            TxtSifre.Text = "1234";
             TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
@@ -77,6 +78,7 @@
             MskTC.Name = "MskTC";
             MskTC.Size = new Size(321, 40);
             MskTC.TabIndex = 9;
+            MskTC.Text = "10268754126";
             MskTC.ValidatingType = typeof(int);
             // 
             // label3

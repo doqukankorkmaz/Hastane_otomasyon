@@ -17,11 +17,14 @@ namespace Hastane_proje
             InitializeComponent();
         }
 
+
+
         public string TCnumara;
         sqlbaglantisi bgl = new sqlbaglantisi();
         private void FrmSekreterDetay_Load(object sender, EventArgs e)
         {
             LblTC.Text = TCnumara;
+
 
             //Ad Soyad
             SqlCommand komut1 = new SqlCommand("Select SekreterAdSoyad from tbl_sekreter where SekreterTC=@p1", bgl.baglanti());
@@ -61,7 +64,7 @@ namespace Hastane_proje
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            SqlCommand komutkaydet = new SqlCommand("insert into Tbl_Randevular (RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) values (@r1,@r2,@r3,@r4 )", bgl.baglanti());
+            SqlCommand komutkaydet = new SqlCommand("insert into Tbl_Randevular (RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor, RandevuDurum) values (@r1,@r2,@r3,@r4,0)", bgl.baglanti());
             komutkaydet.Parameters.AddWithValue("@r1", MskTarih.Text);
             komutkaydet.Parameters.AddWithValue("@r2", MskSaat.Text);
             komutkaydet.Parameters.AddWithValue("@r3", CmbBrans.Text);
@@ -112,6 +115,12 @@ namespace Hastane_proje
 
             FrmRandevuListesi fr1 = new FrmRandevuListesi();
             fr1.Show();
+        }
+
+        private void BtnDuyurular_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr=new FrmDuyurular();
+            fr.Show();
         }
     }
 }

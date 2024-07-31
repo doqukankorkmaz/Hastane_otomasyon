@@ -34,12 +34,13 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(637, 337);
+            dataGridView1.Size = new Size(957, 367);
             dataGridView1.TabIndex = 0;
             // 
             // FrmDuyurular
@@ -47,12 +48,13 @@
             AutoScaleDimensions = new SizeF(15F, 33F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
-            ClientSize = new Size(637, 337);
+            ClientSize = new Size(957, 367);
             Controls.Add(dataGridView1);
             Font = new Font("Corbel", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
             Margin = new Padding(6, 5, 6, 5);
             Name = "FrmDuyurular";
             Text = "FrmDuyurular";
+            Load += FrmDuyurular_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
