@@ -45,6 +45,7 @@
             BtnGiris.TabIndex = 12;
             BtnGiris.Text = "Giriş";
             BtnGiris.UseVisualStyleBackColor = true;
+            BtnGiris.Click += BtnGiris_Click;
             // 
             // TxtSifre
             // 
@@ -52,7 +53,9 @@
             TxtSifre.Margin = new Padding(6, 5, 6, 5);
             TxtSifre.Name = "TxtSifre";
             TxtSifre.Size = new Size(234, 40);
-            TxtSifre.TabIndex = 10;
+            TxtSifre.TabIndex = 2;
+            TxtSifre.Text = "1111";
+            TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
@@ -61,7 +64,8 @@
             MskTC.Mask = "00000000000";
             MskTC.Name = "MskTC";
             MskTC.Size = new Size(234, 40);
-            MskTC.TabIndex = 9;
+            MskTC.TabIndex = 1;
+            MskTC.Text = "11111111111";
             MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -97,6 +101,7 @@
             // 
             // FrmDoktorGiris
             // 
+            AcceptButton = BtnGiris;
             AutoScaleDimensions = new SizeF(15F, 33F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;

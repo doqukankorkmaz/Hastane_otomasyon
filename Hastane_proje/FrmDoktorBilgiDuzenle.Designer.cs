@@ -51,6 +51,7 @@
             BtBilgiGuncelle.TabIndex = 43;
             BtBilgiGuncelle.Text = "Güncelle";
             BtBilgiGuncelle.UseVisualStyleBackColor = false;
+            BtBilgiGuncelle.Click += BtBilgiGuncelle_Click;
             // 
             // TxtSoyad
             // 
@@ -156,6 +157,7 @@
             Margin = new Padding(6, 5, 6, 5);
             Name = "FrmDoktorBilgiDuzenle";
             Text = "FrmDoktorBilgiDuzenle";
+            Load += FrmDoktorBilgiDuzenle_Load;
             ResumeLayout(false);
             PerformLayout();
         }
